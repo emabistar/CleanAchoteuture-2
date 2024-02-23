@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bFCv8XbKCZ56lQzDp9wuKnRsyqjz4GRVnPQhiUwQxgEQX6wyjEIVarf9EmROApvygUSX0WuOqemb5eBgwQ2L8g==",
+  "dgSpecHash": "t55Kn/LbH+HC58BjM7DZnllL9Y1dM1Veh6oQNAknZ3rd+zc3qxEK/prqmSm+Wl+OiEkM3UVf2721WLjkY7MZBQ==",
   "success": true,
   "projectFilePath": "/Users/aby/Projects/EmployeeCleanArch/FrontEndEmployee/FrontEndEmployee.csproj",
   "expectedPackageFiles": [
@@ -28,9 +28,12 @@
     "/Users/aby/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "/Users/aby/.nuget/packages/microsoft.jsinterop/7.0.16/microsoft.jsinterop.7.0.16.nupkg.sha512",
     "/Users/aby/.nuget/packages/microsoft.jsinterop.webassembly/7.0.16/microsoft.jsinterop.webassembly.7.0.16.nupkg.sha512",
+    "/Users/aby/.nuget/packages/microsoft.net.illink.tasks/8.0.2/microsoft.net.illink.tasks.8.0.2.nupkg.sha512",
+    "/Users/aby/.nuget/packages/microsoft.net.sdk.webassembly.pack/8.0.2/microsoft.net.sdk.webassembly.pack.8.0.2.nupkg.sha512",
     "/Users/aby/.nuget/packages/system.io.pipelines/7.0.0/system.io.pipelines.7.0.0.nupkg.sha512",
     "/Users/aby/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
-    "/Users/aby/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
+    "/Users/aby/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
+    "/Users/aby/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.2/microsoft.netcore.app.runtime.mono.browser-wasm.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net8.0": {
       "Azure.Core/1.24.0": {
         "type": "package",
         "dependencies": {
@@ -1241,7 +1241,7 @@
       },
       "ApllicationEqmployee/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "DomainEmployee": "1.0.0"
         },
@@ -1254,7 +1254,7 @@
       },
       "ArchitectureEmployee/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "ApllicationEqmployee": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
@@ -1268,7 +1268,7 @@
       },
       "DomainEmployee/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
           "bin/placeholder/DomainEmployee.dll": {}
         },
@@ -3963,11 +3963,12 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net8.0": [
       "ApllicationEqmployee >= 1.0.0",
       "ArchitectureEmployee >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.16",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.10",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -3989,16 +3990,15 @@
         "/Users/aby/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net8.0"
       ],
       "sources": {
         "/usr/local/share/dotnet/library-packs": {},
-        "/usr/local/share/dotnet/sdk/7.0.313/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {
             "/Users/aby/Projects/EmployeeCleanArch/ApllicationEqmployee/ApllicationEqmployee.csproj": {
               "projectPath": "/Users/aby/Projects/EmployeeCleanArch/ApllicationEqmployee/ApllicationEqmployee.csproj"
@@ -4013,17 +4013,28 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.16, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.10, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.10, )"
           },
@@ -4061,7 +4072,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

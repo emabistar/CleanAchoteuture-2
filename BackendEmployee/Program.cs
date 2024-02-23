@@ -1,9 +1,17 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using ApllicationEqmployee.Contracts;
+using ArchitectureEmployee.Data;
+using ArchitectureEmployee.Implementation;
+using Microsoft.EntityFrameworkCore;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddScoped<IEmployee,EmployeeRepos>
+builder.Services.AddDbContext<EmployeeContext>(o =>
+o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Database connection string 'DefaultConnection' does not exist")));
+builder.Services.AddScoped<IEmployee, EmployeeRepos>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -24,4 +32,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
 
